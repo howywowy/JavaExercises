@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>HW_basis_JS.html</title>
+<script type="text/javascript">
+function confirmation() {
+	var answer = confirm("Naar homepage Howard ?");
+	if (answer){
+		alert("Tot ziens !")
+		window.location = "http://www.howardwoei.nl/";
+	}
+	else{
+		alert("Bedankt voor het blijven!")
+	}
+}
+</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #99CC33;
+}
+#apDiv1 {
+	position:absolute;
+	left:600px;
+	top:150px;
+	width:150px;
+	height:150px;
+	z-index:1;
+}
+-->
+</style></head>
+<body>
+<div id="apDiv1">
+<form>
+<input type="button" onClick="confirmation()" value="Pagina verlaten">
+</form></div>
+</body>
+</html>
+

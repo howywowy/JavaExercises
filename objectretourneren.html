@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Object retoureneren</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+//1. de functie declareren (definieren)
+function kwadraat(getal)
+{
+// 1a. de berekening, hier bv kwadraat uitrekeken
+
+var kwadraat = getal * getal;
+
+//1b. resultaat string toekennen 
+
+var resultaat = 'ok'; 
+
+//1c. resultaat object terugeven (returnen); in dit geval  meerdere waarden
+
+return {
+uitkomst: kwadraat,
+resultaat:resultaat
+};
+
+}
+
+// 2. functie aanroepen
+
+var aanroep = kwadraat(5);
+
+// 3, De varaiabel aanroep is nu een object met twee leden(members).
+// Je kan de inhoud van het lid 'uitkomst naar het scherm schrijven
+document.write('Het kwadraat van 5 is ' + aanroep.uitkomst);
+//3a. je kan ook het lid 'reslutaat; naar het scherm schrijven
+document.write('En dit antwoord is  ' + aanroep.resultaat);
+//-->
+</script>
+</head>
+<body>
+<h1> Object retourneren uit een functie</h1>
+</body>
+</html>
