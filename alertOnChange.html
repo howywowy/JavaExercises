@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Oefening uit Praktisch JavaScript blz 20</title>
+</head>
+<body>
+<p>Oefening uit Praktisch JavaScript blz 20</p>
+</br>
+<form name= "Demoform">
+<input type="tekst" ID="test1" onChange="melding()">
+<br>
+<input type="tekst" ID="test2" onChange="melding()">
+</form>
+</body>
+<script language="JavaScript" type="text/javascript">
+<!--
+// de functie melding() wordt aangeroepen door de event Onchange
+function melding()
+{
+with (document.Demoform){
+var message
+message = "u vulde in:  " + test1.value + " en " + test2.value 
+alert(message)}
+}
+-->
+</script>
+</html>
