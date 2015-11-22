@@ -3,6 +3,11 @@
 <html>
 <head>
 <title>Object retoureneren</title>
+
+</head>
+<body>
+<h1> Object retourneren uit een functie</h1>
+</body>
 <script language="JavaScript" type="text/javascript">
 <!--
 //1. de functie declareren (definieren)
@@ -15,12 +20,14 @@ var kwadraat = getal * getal;
 //1b. resultaat string toekennen 
 
 var resultaat = 'ok'; 
+var tekstje ='Nu is het duidelijk';
 
 //1c. resultaat object terugeven (returnen); in dit geval  meerdere waarden
 
 return {
 uitkomst: kwadraat,
-resultaat:resultaat
+resultaat:resultaat,
+zinnetje:tekstje
 };
 
 }
@@ -32,12 +39,12 @@ var aanroep = kwadraat(5);
 // 3, De varaiabel aanroep is nu een object met twee leden(members).
 // Je kan de inhoud van het lid 'uitkomst naar het scherm schrijven
 document.write('Het kwadraat van 5 is ' + aanroep.uitkomst);
-//3a. je kan ook het lid 'reslutaat; naar het scherm schrijven
+document.write('<br>');
+document.write('<br>');
+//3a. je kan ook het lid 'resultaat; naar het scherm schrijven
 document.write('En dit antwoord is  ' + aanroep.resultaat);
+document.write('<br><br>');
+document.write(' ' + aanroep.zinnetje);
 //-->
 </script>
-</head>
-<body>
-<h1> Object retourneren uit een functie</h1>
-</body>
 </html>
